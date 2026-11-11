@@ -1,0 +1,22 @@
+# Python / Backend
+Backend/venv/
+Backend/.venv/
+Backend/uploads/
+Backend/serviceAccount.json
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Node / Frontend
+frontend/dist/
+frontend/node_modules/
+node_modules/
+
+# Environment / Secrets
+.env
+.env.*
+!.env.example
+
+# OS / Editor
+.DS_Store
+*.log

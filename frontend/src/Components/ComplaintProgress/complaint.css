@@ -1,0 +1,15 @@
+.complaintContainer{
+    padding: 10%;
+}
+#complaintNumber{
+    width: 70%;
+    margin-right: 2em;
+}
+.inactive-button{
+    color: grey;
+}
+.inactive-button:hover{
+    color: grey;
+    background-color: grey;
+    display: none;
+}

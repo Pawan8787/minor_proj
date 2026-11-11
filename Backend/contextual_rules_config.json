@@ -1,0 +1,87 @@
+{
+  "Type 1": {
+    "name": "Major Arterial Roads",
+    "min_width_feet": 80.0,
+    "traffic_density": "High Speed / Heavy Commercial Flow",
+    "sla_hours": {
+      "missing_manhole": 12,
+      "missing_drain_slab": 12,
+      "critical_pothole": 24,
+      "water_stagnation": 24,
+      "crash_barrier_damaged": 24,
+      "lighting_outage": 24,
+      "encroachment": 48
+    },
+    "tolerances": {
+      "pothole_depth_max_mm": 25,
+      "pothole_area_max_sqm": 0.1,
+      "water_stagnation_depth_max_cm": 2.0,
+      "lane_marking_fade_tolerance_pct": 20,
+      "kerb_displacement_max_mm": 30
+    },
+    "weights": {
+      "drainage": 0.3,
+      "pavement": 0.3,
+      "safety_signage": 0.2,
+      "lighting": 0.1,
+      "cleanliness": 0.1
+    }
+  },
+  "Type 2": {
+    "name": "City Main Roads",
+    "min_width_feet": 40.0,
+    "max_width_feet": 80.0,
+    "traffic_density": "Medium / Mixed Urban Traffic",
+    "sla_hours": {
+      "missing_manhole": 24,
+      "missing_drain_slab": 24,
+      "critical_pothole": 48,
+      "water_stagnation": 36,
+      "crash_barrier_damaged": 48,
+      "lighting_outage": 48,
+      "encroachment": 72
+    },
+    "tolerances": {
+      "pothole_depth_max_mm": 40,
+      "pothole_area_max_sqm": 0.25,
+      "water_stagnation_depth_max_cm": 5.0,
+      "lane_marking_fade_tolerance_pct": 35,
+      "kerb_displacement_max_mm": 50
+    },
+    "weights": {
+      "drainage": 0.25,
+      "pavement": 0.25,
+      "safety_signage": 0.2,
+      "lighting": 0.15,
+      "cleanliness": 0.15
+    }
+  },
+  "Type 3": {
+    "name": "Ward / Internal Roads",
+    "max_width_feet": 40.0,
+    "traffic_density": "Low / Neighborhood Residential",
+    "sla_hours": {
+      "missing_manhole": 24,
+      "missing_drain_slab": 36,
+      "critical_pothole": 72,
+      "water_stagnation": 48,
+      "crash_barrier_damaged": 72,
+      "lighting_outage": 72,
+      "encroachment": 96
+    },
+    "tolerances": {
+      "pothole_depth_max_mm": 50,
+      "pothole_area_max_sqm": 0.4,
+      "water_stagnation_depth_max_cm": 8.0,
+      "lane_marking_fade_tolerance_pct": 50,
+      "kerb_displacement_max_mm": 80
+    },
+    "weights": {
+      "drainage": 0.35,
+      "pavement": 0.25,
+      "cleanliness": 0.2,
+      "lighting": 0.15,
+      "safety_signage": 0.05
+    }
+  }
+}
